@@ -1,4 +1,9 @@
 export default function App() {
+  const mapsUrl =
+    "https://www.google.com/maps/search/?api=1&query=31+Pleasant+Street+Woodstock+VT+05091";
+  const mapsEmbedUrl =
+    "https://www.google.com/maps?output=embed&q=31+Pleasant+Street+Woodstock+VT+05091";
+
   return (
     <main className="page-shell">
       <section className="hero" id="home-hero">
@@ -88,7 +93,7 @@ export default function App() {
             <address className="footer__body">
               <a
                 className="footer__address-link"
-                href="https://www.google.com/maps/search/?api=1&query=31+Pleasant+Street+Woodstock+VT+05091"
+                href={mapsUrl}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -97,6 +102,24 @@ export default function App() {
                 Woodstock, Vermont 05091
               </a>
             </address>
+            <a
+              className="footer__map-link"
+              href={mapsUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open 31 Pleasant Street in Google Maps"
+            >
+              <div className="footer__map-frame" aria-hidden="true">
+                <iframe
+                  src={mapsEmbedUrl}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  tabIndex={-1}
+                  title="Map preview of Pemberley's Woodstock location"
+                />
+              </div>
+              <span className="footer__map-pill">Open in Google Maps</span>
+            </a>
           </section>
 
           <section className="footer__card" aria-labelledby="footer-hours">
