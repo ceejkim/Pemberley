@@ -70,6 +70,60 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      <footer className="footer" id="visit">
+        <div className="footer__copy">
+          <p className="footer__eyebrow">Plan Your Visit</p>
+          <h2>Visit Pemberley</h2>
+          <p className="footer__deck">
+            A calm corner in Woodstock for the home and garden.
+          </p>
+        </div>
+
+        <div className="footer__details" aria-label="Store details">
+          <section className="footer__card" aria-labelledby="footer-location">
+            <p className="footer__label" id="footer-location">
+              Location
+            </p>
+            <address className="footer__body">
+              31 Pleasant Street
+              <br />
+              <span>Just off Ford</span>
+              <br />
+              Woodstock, Vermont 05091
+            </address>
+          </section>
+
+          <section className="footer__card" aria-labelledby="footer-hours">
+            <p className="footer__label" id="footer-hours">
+              Store Hours
+            </p>
+            <p className="footer__body">
+              Thursday through Saturday
+              <br />
+              10 am - 5 pm
+            </p>
+            <p className="footer__body">
+              Sunday
+              <br />
+              11 am - 4 pm
+            </p>
+            <p className="footer__note">Or by appointment</p>
+          </section>
+
+          <section className="footer__card" aria-labelledby="footer-contact">
+            <p className="footer__label" id="footer-contact">
+              Contact
+            </p>
+            <p className="footer__body">
+              <a href="mailto:info@pemberleyvt.com">info@pemberleyvt.com</a>
+            </p>
+            <p className="footer__body">
+              <a href="tel:+18023320234">(802) 332-0234</a>
+            </p>
+          </section>
+        </div>
+      </footer>
     </main>
   );
 }
