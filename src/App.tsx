@@ -86,11 +86,16 @@ export default function App() {
               Location
             </p>
             <address className="footer__body">
-              31 Pleasant Street
-              <br />
-              <span>Just off Ford</span>
-              <br />
-              Woodstock, Vermont 05091
+              <a
+                className="footer__address-link"
+                href="https://www.google.com/maps/search/?api=1&query=31+Pleasant+Street+Woodstock+VT+05091"
+                target="_blank"
+                rel="noreferrer"
+              >
+                31 Pleasant Street <span>(just off Ford)</span>
+                <br />
+                Woodstock, Vermont 05091
+              </a>
             </address>
           </section>
 

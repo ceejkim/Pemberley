@@ -406,6 +406,11 @@ a {
   color: rgba(255, 255, 255, 0.72);
 }
 
+.footer__address-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .footer__note {
   color: rgba(255, 255, 255, 0.72);
 }
